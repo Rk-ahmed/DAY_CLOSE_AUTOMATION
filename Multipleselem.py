@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 import csv
 import asyncio
 import time
@@ -132,7 +133,8 @@ def process_day_close(username, password, loop_num, attempt_num, semaphore):
             options.add_experimental_option('useAutomationExtension', False)
             options.add_argument("--log-level=3")  # Suppress browser logs
             
-            driver = webdriver.Chrome(options=options)
+            #driver = webdriver.Chrome(options=options)
+            driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
             wait = WebDriverWait(driver, 20)
             
             driver.get(URL)
