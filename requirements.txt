@@ -1,0 +1,5 @@
+selenium==4.24.0
+aiohttp>=3.8  # to perform asynchronous HTTP requests aiohttop
+beautifulsoup4>=4.12   #to parse and extract data from HTML and XML documents
+lxml>=4.9    # for fast and efficient parsing of XML and HTML documents
+python-dotenv>=1.0  # load environment variables from a .env file into Python

@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.env
+chromedriver.exe
+*.log
+*.tmp
