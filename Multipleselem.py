@@ -20,7 +20,7 @@ URL = "https://sandboxerp.shakti.org.bd:8072/Home/Login?ReturnUrl=%2F"
 
 LOOP_DURATION = 300  # Total duration in seconds to keep looping (5 minutes)
 CONCURRENCY = 5  # Number of concurrent browser sessions
-DELAY_BETWEEN_LOOPS = 0.5  # Delay between each complete loop cycle
+# DELAY_BETWEEN_LOOPS = 0.5  # Delay between each complete loop cycle
 
 # ---------------- LOGGING ----------------
 def setup_logging():
