@@ -9,7 +9,8 @@ from selenium.webdriver.chrome.options import Options
 
 #------------- Create Chrome options-----------
 options = Options()
-options.add_argument("--incognito")
+options.add_argument("--incognito")  # For avoiding google chrome password save popup
+options.add_argument("--start-maximized")  # Start maximized
 # Launch browser in incognito mode
 driver = webdriver.Chrome(options=options)
 
