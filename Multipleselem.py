@@ -17,8 +17,8 @@ CSV_FILE = "creds3.csv"  # CSV format: username,password
 RESULTS_DIR = "results"
 URL = "https://sandboxerp.shakti.org.bd:8072/Home/Login?ReturnUrl=%2F"
 
-LOOP_DURATION = 300  # Total duration in seconds to keep looping (5 minutes)
-CONCURRENCY = 5  # Number of concurrent browser sessions
+LOOP_DURATION = 60  # Total duration in seconds to keep looping (60 Seconds)
+CONCURRENCY = 10  # Number of concurrent browser sessions
 DELAY_BETWEEN_LOOPS = 0.5  # Delay between each complete loop cycle
 
 # ---------------- LOGGING ----------------
@@ -346,7 +346,7 @@ def main():
     summary_file = write_summary(all_results, elapsed, loop_count)
     
     # Write detailed results
-    detailed_file = f"{RESULTS_DIR}/day_close_detailed_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+    ''' detailed_file = f"{RESULTS_DIR}/day_close_detailed_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
     try:
         with open(detailed_file, 'w', newline='', encoding='utf-8') as f:
             fieldnames = ['loop', 'attempt', 'username', 'status', 'timestamp', 'message']
@@ -359,7 +359,7 @@ def main():
     
     logger.info("=" * 70)
     logger.info("📊 Check the summary file for per-user statistics")
-    logger.info("=" * 70)
+    logger.info("=" * 70)'''
 
 if __name__ == "__main__":
     main()
