@@ -1,6 +1,6 @@
 ---
 
-# 🚀 Continuous Day Close Automation (Selenium + Python)
+# 🚀 Day Close Automation (Selenium + Python)
 
 This project automates the **"Day Close"** process in the [Shakti ERP](-------------------) portal using **Python + Selenium**.
 It allows you to run multiple browser sessions in parallel (concurrently) to perform automated ERP day-close actions for multiple users.
