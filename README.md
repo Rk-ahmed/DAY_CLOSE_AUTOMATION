@@ -10,10 +10,15 @@ It allows you to run multiple browser sessions in parallel (concurrently) to per
 ## 📋 Features
 
 ✅ Automates login and “Day Close” process for multiple users
+
 ✅ Supports **headless Chrome** (runs without opening browser windows)
+
 ✅ Handles optional modals automatically
+
 ✅ Runs **concurrently** using multithreading for better performance
+
 ✅ Generates detailed logs and per-user summary reports
+
 ✅ Easy configuration using simple constants at the top of the script
 
 ---
