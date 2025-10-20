@@ -285,7 +285,7 @@ This project is open-source under the **MIT License** — free to use and modify
 
 **Rakib Ahmed**
 🎯 *Data Analyst | Automation Enthusiast*
-📧 [rakib@example.com](mailto:rakib@example.com)
+📧 [rakib@example.com](mailto:rakib429395@gmail.com)
 🔗 [GitHub](https://github.com/rk-ahmed) • [LinkedIn](https://linkedin.com/in/your-profile)
 
 ---
