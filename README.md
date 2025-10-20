@@ -187,7 +187,7 @@ day-close-automation/
 Make sure your virtual environment is activated in VS Code, then run:
 
 ```bash
-python dayclose_loop.py
+python Multipleselem.py
 ```
 
 The script will:
