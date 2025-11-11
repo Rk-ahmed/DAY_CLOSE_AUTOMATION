@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
 import csv
 import asyncio
 import time
@@ -18,9 +17,9 @@ CSV_FILE = "creds3.csv"  # CSV format: username,password
 RESULTS_DIR = "results"
 URL = "https://sandboxerp.shakti.org.bd:8072/Home/Login?ReturnUrl=%2F"
 
-LOOP_DURATION = 300  # Total duration in seconds to keep looping (5 minutes)
-CONCURRENCY = 5  # Number of concurrent browser sessions
-# DELAY_BETWEEN_LOOPS = 0.5  # Delay between each complete loop cycle
+LOOP_DURATION = 60  # Total duration in seconds to keep looping (60 Seconds)
+CONCURRENCY = 10  # Number of concurrent browser sessions
+DELAY_BETWEEN_LOOPS = 0.2  # Delay between each complete loop cycle
 
 # ---------------- LOGGING ----------------
 def setup_logging():
@@ -133,8 +132,7 @@ def process_day_close(username, password, loop_num, attempt_num, semaphore):
             options.add_experimental_option('useAutomationExtension', False)
             options.add_argument("--log-level=3")  # Suppress browser logs
             
-            #driver = webdriver.Chrome(options=options)
-            driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+            driver = webdriver.Chrome(options=options)
             wait = WebDriverWait(driver, 20)
             
             driver.get(URL)
@@ -348,7 +346,7 @@ def main():
     summary_file = write_summary(all_results, elapsed, loop_count)
     
     # Write detailed results
-    detailed_file = f"{RESULTS_DIR}/day_close_detailed_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+    ''' detailed_file = f"{RESULTS_DIR}/day_close_detailed_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
     try:
         with open(detailed_file, 'w', newline='', encoding='utf-8') as f:
             fieldnames = ['loop', 'attempt', 'username', 'status', 'timestamp', 'message']
@@ -361,7 +359,7 @@ def main():
     
     logger.info("=" * 70)
     logger.info("📊 Check the summary file for per-user statistics")
-    logger.info("=" * 70)
+    logger.info("=" * 70)'''
 
 if __name__ == "__main__":
     main()
