@@ -1,14 +1,10 @@
 ---
-
-<<<<<<< HEAD
-# 🚀 Continuous Day Close Automation (Selenium + Python)
-
-This project automates the **"Day Close"** process in the [Shakti ERP](https://sandboxerp.shakti.org.bd:8072) portal using **Python + Selenium**.
+This project automates the **"Day Open"**  and **"Day Close"** process in the [Shakti ERP](https://sandboxerp.shakti.org.bd:8072) portal using **Python + Selenium**.
 =======
-# 🚀 Day Close Automation (Selenium + Python)
+# 🚀 Day Open & Close Automation (Selenium + Python)
 
 This project automates the **"Day Close"** process in the [Shakti ERP](-------------------) portal using **Python + Selenium**.
->>>>>>> 6627d301fc8433ea1e670e2c61cd4dc0ef563667
+
 It allows you to run multiple browser sessions in parallel (concurrently) to perform automated ERP day-close actions for multiple users.
 
 ---
@@ -16,12 +12,6 @@ It allows you to run multiple browser sessions in parallel (concurrently) to per
 ## 📋 Features
 
 ✅ Automates login and “Day Close” process for multiple users
-<<<<<<< HEAD
-✅ Supports **headless Chrome** (runs without opening browser windows)
-✅ Handles optional modals automatically
-✅ Runs **concurrently** using multithreading for better performance
-✅ Generates detailed logs and per-user summary reports
-=======
 
 ✅ Supports **headless Chrome** (runs without opening browser windows)
 
@@ -31,7 +21,14 @@ It allows you to run multiple browser sessions in parallel (concurrently) to per
 
 ✅ Generates detailed logs and per-user summary reports
 
->>>>>>> 6627d301fc8433ea1e670e2c61cd4dc0ef563667
+✅ Supports **headless Chrome** (runs without opening browser windows)
+
+✅ Handles optional modals automatically
+
+✅ Runs **concurrently** using multithreading for better performance
+
+✅ Generates detailed logs and per-user summary reports
+
 ✅ Easy configuration using simple constants at the top of the script
 
 ---
@@ -188,11 +185,11 @@ day-close-automation/
 │
 ├── creds3.csv                # User credentials (username, password)
 ├── results/                  # Folder for logs and summary reports
-<<<<<<< HEAD
-├── dayclose_loop.py          # Main automation script
-=======
-├── Multipleselem.py          # Main automation script
->>>>>>> 6627d301fc8433ea1e670e2c61cd4dc0ef563667
+
+├── Dayclose.py               # Main automation script
+
+├── Dayopen.py                # Main automation script
+
 ├── requirements.txt          # Dependencies list
 └── README.md                 # Documentation (this file)
 ```
@@ -204,11 +201,11 @@ day-close-automation/
 Make sure your virtual environment is activated in VS Code, then run:
 
 ```bash
-<<<<<<< HEAD
-python dayclose_loop.py
+
+python dayclose.py
 =======
-python Multipleselem.py
->>>>>>> 6627d301fc8433ea1e670e2c61cd4dc0ef563667
+python dayopen.py
+
 ```
 
 The script will:
@@ -229,11 +226,7 @@ You can customize the script by editing the following variables at the top of `d
 | --------------------- | -------------------------------------------- | ------------------------------------------------------------------ |
 | `CSV_FILE`            | Path to your credentials file                | `"creds3.csv"`                                                     |
 | `RESULTS_DIR`         | Directory where logs and summaries are saved | `"results"`                                                        |
-<<<<<<< HEAD
-| `URL`                 | ERP login URL                                | `"https://sandboxerp.shakti.org.bd:8072/Home/Login?ReturnUrl=%2F"` |
-=======
 | `URL`                 | ERP login URL                                | `...................................`                              |
->>>>>>> 6627d301fc8433ea1e670e2c61cd4dc0ef563667
 | `LOOP_DURATION`       | Duration (seconds) to keep looping           | `60`                                                               |
 | `CONCURRENCY`         | Number of concurrent browser sessions        | `10`                                                               |
 | `DELAY_BETWEEN_LOOPS` | Delay between loop cycles (seconds)          | `0.5`                                                              |
@@ -319,9 +312,4 @@ This project is open-source under the **MIT License** — free to use and modify
 🔗 [GitHub](https://github.com/rk-ahmed) • [LinkedIn](https://linkedin.com/in/your-profile)
 
 ---
-=======
-📧 [Gmail](rakib429395@gmail.com)
-🔗 [GitHub](https://github.com/rk-ahmed) • [LinkedIn](https://linkedin.com/in/your-profile)
 
----
->>>>>>> 6627d301fc8433ea1e670e2c61cd4dc0ef563667
