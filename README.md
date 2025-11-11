@@ -272,16 +272,12 @@ Contains per-user statistics:
 ======================================================
 CONTINUOUS DAY CLOSE LOOP AUTOMATION
 ======================================================
-<<<<<<< HEAD
-🎯 Target: https://sandboxerp.shakti.org.bd:8072
-=======
 🎯 Target: ...........................
->>>>>>> 6627d301fc8433ea1e670e2c61cd4dc0ef563667
-⏱️  Loop Duration: 60 seconds
+⏱️ Loop Duration: 60 seconds
 🔢 Concurrency: 10
 📊 Loaded 50 credentials
 🚀 Starting continuous day close loop for 60 seconds...
-[Loop 1] ✅ Completed: 48/50 successful
+      [Loop 1] ✅ Completed: 48/50 successful
 📊 Summary written to results/day_close_summary_20251018_213045.csv
 🏁 Loop completed: 12 iterations in 60.01s
 ```
