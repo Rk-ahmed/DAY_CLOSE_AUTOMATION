@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -206,6 +207,8 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+=======
+>>>>>>> 6627d301fc8433ea1e670e2c61cd4dc0ef563667
 __pycache__/
 *.pyc
 *.env
