@@ -1,5 +1,5 @@
 ---
-This project automates the **"Day Open"**  and **"Day Close"** process in the [Shakti ERP](https://sandboxerp.shakti.org.bd:8072) portal using **Python + Selenium**.
+This project automates the **"Day Open"**  and **"Day Close"** process in the [Shakti ERP].
 =======
 # 🚀 Day Open & Close Automation (Selenium + Python)
 
@@ -307,7 +307,6 @@ This project is open-source under the **MIT License** — free to use and modify
 
 **Rakib Ahmed**
 🎯 *Data Analyst | Automation Enthusiast*
-<<<<<<< HEAD
 📧 [rakib@example.com](mailto:rakib@example.com)
 🔗 [GitHub](https://github.com/rk-ahmed) • [LinkedIn](https://linkedin.com/in/your-profile)
 
